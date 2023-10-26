@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Number guessing game</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+  <h1>猜数字：(Number guessing game)</h1>
+
+  
+  <p>请在 1 到 100 之间的随机数。你是否能在 10 次或更短的时间内猜到它。我们会告诉你是否
+    你的猜测太高或太低</p>
+    <p>(Random numbers between 1 and 100. Can you guess it in 10 times or less. We'll tell you if it is
+      Your guess is too high or too low.)</p>
+  <div class="form">
+    <label for="guessField">请输入你猜的数：(Enter a guess: )</label>
+    <input type="number" min="1" max="100" required id="guessField" class="guessField">
+    <input type="submit" value="Submit guess" class="guessSubmit">
+  </div>
+
+  <div class="resultParas">
+    <p class="guesses"></p>
+    <p class="lastResult"></p>
+    <p class="lowOrHi"></p>
+  </div>
+
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
